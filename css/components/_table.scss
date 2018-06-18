@@ -1,0 +1,53 @@
+// wrap responsive table in media query
+@media screen and (max-width: 992px) {
+  .table-responsive {
+    thead,
+    tbody,
+    tfoot,
+    tr,
+    th,
+    td {
+      display: block;
+    }
+    thead {
+      display: none;
+    }
+    .align-center,
+    .align-right {
+      text-align: inherit;
+    }
+    tr {
+      margin-bottom: 2px;
+      &:first-child {
+        border: 0;
+      }
+    } // override bootstrap's styling
+    > tbody > tr > td,
+    > tbody > tr > th {
+      text-align: left;
+      padding: 0.4rem;
+      vertical-align: middle;
+      padding-left: calc(120px + 1rem);
+      border-top-color: rgba(221, 221, 221, 0.5);
+      &:first-child {
+        border: 0;
+      }
+    }
+    [data-th] {
+      position: relative;
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 120px;
+        padding-left: 1rem;
+        border-right: 1px solid #ccc;
+        height: 100%;
+        content: attr(data-th);
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

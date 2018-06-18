@@ -1,0 +1,6 @@
+// 使用方法 @media #{$col-xs}{ font-size:12px}
+$col-xs: '(max-width: 767px)';
+$col-sm: '(min-width:768) and (max-width: 991px)';
+$col-md: '(min-width: 992px) and (max-width: 1199px)';
+$col-xl: '(min-width: 1200px)';
+$col-xs-landscape: '(max-width: 767px) and (orientation: landscape)';

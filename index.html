@@ -1,14 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>高雄長庚紀念醫院</title>
+  <!-- bootstrap scss 自定義檔 -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- fontawesome 5 -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <!-- material-icons -->
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.4.85/css/materialdesignicons.min.css">
+  <!-- pretty-checkbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+  <!-- select -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
+  <div class="container">
+    <div class="card mt-3">
+      <div class="card-header">
+        Pretty-checkbox
+        <a href="https://lokesh-coder.github.io/pretty-checkbox/" class="btn btn-primary">官方連結</a>
+
+      </div>
+      <div class="card-body">
+        <div class="pretty p-icon p-round p-bigger">
+          <input type="radio" name="icon_solid" checked/>
+          <div class="state p-warning">
+            <i class="icon mdi mdi-check"></i>
+            <label>是</label>
+          </div>
+        </div>
+
+        <div class="pretty p-icon p-round p-bigger">
+          <input type="radio" name="icon_solid" />
+          <div class="state p-warning">
+            <i class="icon mdi mdi-check"></i>
+            <label>否</label>
+          </div>
+        </div>
+
+        <div class="pretty p-icon">
+          <input type="checkbox" />
+          <div class="state p-primary">
+            <i class="icon mdi mdi-check"></i>
+            <label>選項一</label>
+          </div>
+        </div>
+        <div class="pretty p-icon">
+          <input type="checkbox" />
+          <div class="state p-primary">
+            <i class="icon mdi mdi-check"></i>
+            <label>選項二</label>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="card mt-3">
+      <div class="card-header">
+        bootstrap-select
+        <a href="https://silviomoreto.github.io/bootstrap-select/" class="btn btn-primary">官方連結</a>
+      </div>
+      <div class="card-body">
+        <select class="selectpicker form-control">
+          <option>電子白版</option>
+          <option>電子白版</option>
+        </select>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <!-- bootstrap 4.0 正式版 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
+  <!-- jQuery library End -->
+  <script>
+    $('.selectpicker').selectpicker();
+  </script>
 
 </body>
 
